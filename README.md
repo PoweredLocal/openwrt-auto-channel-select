@@ -16,6 +16,8 @@ Where interface index is the index number of the wireless interface you are inst
 
 After the best channel is found, this script will commit a config change using UCI, assuming that your radio interface has the same index (wlan0 -> radio0).
 
+You can execute this script from your crontab to make it run regularly, or to `/etc/rc.local` to launch it on startup.
+
 ## Default settings
 
 By default this script makes 3 scans with 5 second delay between them. You can change this at the top of the script.
